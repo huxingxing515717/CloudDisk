@@ -1,4 +1,4 @@
-package site.pyyf.fileStore.utils.Video;
+package site.pyyf.fileStore.utils;
 
 import java.io.File;
 
@@ -24,6 +24,7 @@ public class VideoTransfer {
 //        Encoder encoder = new Encoder();
 //        MultimediaObject multimediaObject = new MultimediaObject(source);
 
+        //占用空间更少，转化速度更快
         AudioAttributes audio = new AudioAttributes();
         audio.setCodec("libmp3lame"); //音频编码格式
         audio.setBitRate(new Integer(80000));

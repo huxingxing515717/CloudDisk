@@ -78,16 +78,4 @@ public class CloudDiskUtil {
         return count;
     }
 
-
-
-    public static void main(String[] args) {
-        String bookName;
-        String path = "1.md";
-        if(path.contains("\\"))
-            bookName= StringUtils.substringAfterLast(path,"\\");
-        else
-            bookName=path;
-        System.out.println(bookName);
-    }
-
 }

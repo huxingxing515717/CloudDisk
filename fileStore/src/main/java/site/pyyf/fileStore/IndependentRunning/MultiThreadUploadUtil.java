@@ -1,5 +1,6 @@
-package site.pyyf.fileStore.utils.OSS;
+package site.pyyf.fileStore.IndependentRunning;
 import lombok.AllArgsConstructor;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;

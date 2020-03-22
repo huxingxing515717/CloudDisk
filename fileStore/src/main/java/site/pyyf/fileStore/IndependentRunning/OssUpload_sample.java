@@ -1,4 +1,4 @@
-package site.pyyf.fileStore.utils.OSS;
+package site.pyyf.fileStore.IndependentRunning;
 
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClient;
@@ -19,7 +19,7 @@ import java.io.FileInputStream;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-class AliyunConfi_sample {
+class AliyunConfig_sample {
 
     private String endpoint = "";
     private String accessKeyId ="";
@@ -37,13 +37,13 @@ public class OssUpload_sample {
 
     private static final Logger logger= LoggerFactory.getLogger(OssUpload.class);
     private OSS ossClient;
-    private AliyunConfigg aliyunConfig;
+    private AliyunConfig_sample aliyunConfig;
     //创建 SingleObject 的一个对象
     private static OssUpload_sample instance = new OssUpload_sample();
 
     //让构造函数为 private，这样该类就不会被实例化
     private OssUpload_sample(){
-        aliyunConfig = new AliyunConfigg();
+        aliyunConfig = new AliyunConfig_sample();
         ossClient = aliyunConfig.oSSClient();
     }
 

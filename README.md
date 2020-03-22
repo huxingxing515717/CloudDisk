@@ -16,9 +16,6 @@ CloudDisk是一款云盘应用程序，前端基于Bootstrap和jquery进行开�
 - 使用dubbo作为分布式开发框架，compiler作为provider提供编译功能，fileStore作为consumer进行在线编译
 
 
-
-
-
 ## CloudDisk环境搭建：
 请修改所有sample文件后进行部署
 

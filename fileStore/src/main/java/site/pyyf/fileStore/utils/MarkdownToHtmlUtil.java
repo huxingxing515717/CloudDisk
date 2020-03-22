@@ -1,4 +1,4 @@
-package site.pyyf.fileStore.utils.markdown;
+package site.pyyf.fileStore.utils;
 
 import org.commonmark.Extension;
 import org.commonmark.ext.gfm.tables.TableBlock;
@@ -17,7 +17,7 @@ import java.util.*;
 /**
  * Created by limi on 2017/10/22.
  */
-public class MarkdownToHtmlUtils {
+public class MarkdownToHtmlUtil {
 
     /**
      * markdown格式转换成HTML格式
