@@ -1,6 +1,6 @@
 create schema if not exists cloudDisk collate utf8mb4_0900_ai_ci;
 
-create table if not exists ebook_contents
+create table if not exists ebook_content
 (
     id int auto_increment comment '条目ID'
         primary key,
@@ -9,7 +9,7 @@ create table if not exists ebook_contents
     file_id int null comment '对应的文件的ID'
 );
 
-create table if not exists ebooks
+create table if not exists ebook
 (
     ebook_id int auto_increment comment '书ID'
         primary key,

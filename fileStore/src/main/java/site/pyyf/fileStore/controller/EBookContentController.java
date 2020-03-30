@@ -51,7 +51,7 @@ public class EBookContentController extends BaseController {
             i++;
         }
 
-        StringBuilder newCode = ifilePreviewService.addHtmlShowStyle(ifilePreviewService.addHtmlCompileModule(processedContent, "java"), Arrays.asList("java", "cpp", "python", "html"));
+        StringBuilder newCode = iCodeService.addHtmlShowStyle(iCodeService.addHtmlCompileModule(processedContent, "java"), Arrays.asList("java", "cpp", "python", "html"));
         return CloudDiskUtil.getJSONString(200, newCode.toString());
     }
 

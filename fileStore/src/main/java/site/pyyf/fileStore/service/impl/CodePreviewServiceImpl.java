@@ -1,12 +1,12 @@
 package site.pyyf.fileStore.service.impl;
 
 import org.springframework.stereotype.Service;
-import site.pyyf.fileStore.service.IFilePreviewService;
+import site.pyyf.fileStore.service.ICodePreviewService;
 
 import java.util.List;
 
 @Service
-public class FilePreviewServiceImpl implements IFilePreviewService {
+public class CodePreviewServiceImpl implements ICodePreviewService {
     @Override
     public String addQuotationMarks(String language, StringBuilder oriCode) {
 

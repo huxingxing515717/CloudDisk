@@ -4,7 +4,7 @@ import org.apache.ibatis.annotations.Mapper;
 import site.pyyf.fileStore.entity.Ebook;
 
 @Mapper
-public interface IEbooksMapper {
+public interface IEbookMapper {
 
     Ebook selectByFileId(int fileId);
 

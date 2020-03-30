@@ -17,7 +17,7 @@ CloudDisk是一款云盘应用程序，前端基于Bootstrap和jquery进行开�
 
 
 ## CloudDisk环境搭建：
-请修改所有sample文件后进行部署
+参考： http://wd.pyyf.site/blog/3
 
 ## 更新日志
 2020.3.22
