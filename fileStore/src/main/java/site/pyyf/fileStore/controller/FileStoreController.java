@@ -45,7 +45,7 @@ public class FileStoreController extends BaseController implements CloudDiskCons
 
     /**
      * @return java.util.Map<java.lang.String, java.lang.Object>
-     * @Description 网盘的文件上传
+     * @Description 云盘的文件上传
      * @Author xw
      * @Date 23:10 2020/2/10
      * @Param [file]
@@ -138,7 +138,7 @@ public class FileStoreController extends BaseController implements CloudDiskCons
 
     /**
      * @return void
-     * @Description 网盘的文件下载
+     * @Description 云盘的文件下载
      * @Author xw
      * @Date 23:13 2020/2/10
      * @Param [fId]

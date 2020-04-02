@@ -28,7 +28,7 @@ public class SystemController extends BaseController {
 
     /**
      * @return java.lang.String
-     * @Description 前往我的网盘
+     * @Description 前往我的云盘
      * @Author xw
      * @Date 23:28 2020/2/10
      * @Param [fId, fName, error, map]
@@ -76,7 +76,7 @@ public class SystemController extends BaseController {
         map.put("files", files);
         map.put("nowFolder", nowFolder);
         map.put("location", location);
-        logger.info("网盘页面域中的数据显示成功");
+        logger.info("云盘页面域中的数据显示成功");
         return "clouddisk/files";
     }
 
@@ -187,18 +187,4 @@ public class SystemController extends BaseController {
         return "clouddisk/index";
     }
 
-    /**
-     * @return java.lang.String
-     * @Description 前往帮助页面
-     * @Author xw
-     * @Date 15:17 2020/2/26
-     * @Param [map]
-     **/
-    @GetMapping("/help")
-    public String helpPage(Map<String, Object> map) {
-        //获得统计信息
-        UserStatistics statistics = iMyFileService.getCountStatistics(loginUser.getUserId());
-        map.put("statistics", statistics);
-        return "clouddisk/help";
-    }
 }

@@ -10,7 +10,7 @@
 
     <style type="text/css">/*文档内嵌样式表*/
     body {
-        background-image: url("https://pyyf.oss-cn-hangzhou.aliyuncs.com/community/greek-vase.png");
+        background-image: url("https://pyyf.oss-cn-hangzhou.aliyuncs.com/community/email-pattern.png");
     }
 
     </style>
@@ -125,9 +125,11 @@
             $("#"+element).removeClass("fa fa-angle-down").addClass("fa fa-angle-right");
         $("#contentId").val(contentId);
         var formData = new FormData();
+
         formData.append('contentId', contentId);
+        var domain = $("#domain").html();
         $.ajax({
-            url: '/cloudDisk/ebook/getcontent',
+            url: domain+'/ebook/getcontent',
             type: 'POST',
             data: formData,
             dataType: "json",
@@ -157,10 +159,11 @@
         $("#button" + id).html('<i class="fa fa-spinner fa-pulse"></i>&nbsp;  运行中\n');
         var code = $('#code' + id).text();
         console.log("code=" + code);
+        var domain = $("#domain").html();
         var formData = new FormData();
         formData.append('code', code);
         $.ajax({
-            url: '/cloudDisk/compile',
+            url: domain+'/compile',
             type: 'POST',
             data: formData,
             dataType: "json",
